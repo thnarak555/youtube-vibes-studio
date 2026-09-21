@@ -1,0 +1,57 @@
+/* YouTube-inspired dark interface tokens */
+:root {
+  /* Surface Colors & Opacities */
+  --glass-bg-primary: oklch(0.16 0 0);
+  --glass-bg-secondary: oklch(0.20 0 0);
+  --glass-bg-elevated: oklch(0.24 0 0);
+  --glass-bg-subtle: oklch(1 0 0 / 5%);
+  --glass-bg-hover: oklch(1 0 0 / 10%);
+  --glass-bg-active: oklch(1 0 0 / 16%);
+
+  /* Specular Highlights & Borders */
+  --glass-border-subtle: oklch(1 0 0 / 9%);
+  --glass-border-medium: oklch(1 0 0 / 14%);
+  --glass-border-highlight: oklch(1 0 0 / 22%);
+  --glass-specular-top: none;
+  --glass-specular-bottom: none;
+
+  /* Blur & Saturation Levels */
+  --glass-blur-sm: 0px;
+  --glass-blur-md: 0px;
+  --glass-blur-lg: 0px;
+  --glass-blur-xl: 0px;
+  --glass-saturate: 100%;
+
+  /* Shadows (macOS diffuse depth) */
+  --glass-shadow-sm: 0 1px 2px oklch(0 0 0 / 30%);
+  --glass-shadow-md: 0 8px 24px oklch(0 0 0 / 35%);
+  --glass-shadow-lg: 0 16px 40px oklch(0 0 0 / 45%);
+  --glass-shadow-floating: 0 20px 56px oklch(0 0 0 / 55%);
+
+  /* Border Radiuses */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 12px;
+  --radius-xl: 14px;
+  --radius-2xl: 16px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-apple: 'Manrope', 'Noto Sans Thai', sans-serif;
+  --font-mono-apple: 'SF Mono', ui-monospace, Menlo, Monaco, Consolas, monospace;
+
+  /* ─── Apple Animation Easing Tokens ──────────────────────────────────── */
+  /* "Fast start, smooth deceleration" — primary motion curve for all UI */
+  --ease-apple:    cubic-bezier(0.32, 0.72, 0, 1);
+  /* Spring-like overshoot — for expanding panels, menus popping in */
+  --ease-spring:   cubic-bezier(0.16, 1, 0.3, 1);
+  /* Standard ease-out — gentle deceleration */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* Pre-composed transition shorthands */
+  --transition-fast:   0.12s cubic-bezier(0.32, 0.72, 0, 1);
+  --transition-base:   0.22s cubic-bezier(0.32, 0.72, 0, 1);
+  --transition-slow:   0.38s cubic-bezier(0.32, 0.72, 0, 1);
+  --transition-spring: 0.40s cubic-bezier(0.16, 1, 0.3, 1);
+}
