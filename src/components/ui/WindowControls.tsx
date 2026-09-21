@@ -55,7 +55,7 @@ export const WindowControls: React.FC<WindowControlsProps> = ({ className = '' }
       {/* Minimize Button */}
       <button
         onClick={handleMinimize}
-        className="w-7 h-7 flex items-center justify-center rounded-lg text-white/50 hover:text-white hover:bg-white/10 active:bg-white/20 transition-all cursor-pointer active:scale-90"
+        className="w-7 h-7 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-accent active:bg-muted transition-all cursor-pointer active:scale-90"
         title="ย่อหน้าต่าง"
         aria-label="ย่อหน้าต่าง"
       >
@@ -65,7 +65,7 @@ export const WindowControls: React.FC<WindowControlsProps> = ({ className = '' }
       {/* Maximize / Restore Button */}
       <button
         onClick={handleMaximize}
-        className="w-7 h-7 flex items-center justify-center rounded-lg text-white/50 hover:text-white hover:bg-white/10 active:bg-white/20 transition-all cursor-pointer active:scale-90"
+        className="w-7 h-7 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-accent active:bg-muted transition-all cursor-pointer active:scale-90"
         title={isMaximized ? "คืนขนาดหน้าต่าง" : "ขยายเต็มจอ"}
         aria-label={isMaximized ? "คืนขนาดหน้าต่าง" : "ขยายเต็มจอ"}
       >
@@ -79,7 +79,7 @@ export const WindowControls: React.FC<WindowControlsProps> = ({ className = '' }
       {/* Close Button */}
       <button
         onClick={handleClose}
-        className="w-7 h-7 flex items-center justify-center rounded-lg text-white/50 hover:text-white hover:bg-red-500/80 active:bg-red-600 transition-all cursor-pointer active:scale-90"
+        className="w-7 h-7 flex items-center justify-center rounded-md text-muted-foreground hover:text-foreground hover:bg-accent active:bg-muted transition-all cursor-pointer active:scale-90"
         title="ปิดหน้าต่าง"
         aria-label="ปิดหน้าต่าง"
       >
