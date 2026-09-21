@@ -1,0 +1,57 @@
+/* Apple / macOS Design System Tokens */
+:root {
+  /* Surface Colors & Opacities */
+  --glass-bg-primary: rgba(12, 13, 20, 0.72);
+  --glass-bg-secondary: rgba(22, 24, 35, 0.65);
+  --glass-bg-elevated: rgba(30, 32, 45, 0.85);
+  --glass-bg-subtle: rgba(255, 255, 255, 0.04);
+  --glass-bg-hover: rgba(255, 255, 255, 0.08);
+  --glass-bg-active: rgba(255, 255, 255, 0.14);
+
+  /* Specular Highlights & Borders */
+  --glass-border-subtle: rgba(255, 255, 255, 0.08);
+  --glass-border-medium: rgba(255, 255, 255, 0.14);
+  --glass-border-highlight: rgba(255, 255, 255, 0.22);
+  --glass-specular-top: inset 0 1px 1px 0 rgba(255, 255, 255, 0.16);
+  --glass-specular-bottom: inset 0 -1px 1px 0 rgba(0, 0, 0, 0.35);
+
+  /* Blur & Saturation Levels */
+  --glass-blur-sm: 12px;
+  --glass-blur-md: 24px;
+  --glass-blur-lg: 40px;
+  --glass-blur-xl: 60px;
+  --glass-saturate: 190%;
+
+  /* Shadows (macOS diffuse depth) */
+  --glass-shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --glass-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --glass-shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+  --glass-shadow-floating: 0 24px 64px -12px rgba(0, 0, 0, 0.75), 0 0 1px 1px rgba(255, 255, 255, 0.1);
+
+  /* Border Radiuses */
+  --radius-xs: 6px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-apple: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', 'Segoe UI', Roboto, sans-serif;
+  --font-mono-apple: 'SF Mono', ui-monospace, Menlo, Monaco, Consolas, monospace;
+
+  /* ─── Apple Animation Easing Tokens ──────────────────────────────────── */
+  /* "Fast start, smooth deceleration" — primary motion curve for all UI */
+  --ease-apple:    cubic-bezier(0.32, 0.72, 0, 1);
+  /* Spring-like overshoot — for expanding panels, menus popping in */
+  --ease-spring:   cubic-bezier(0.16, 1, 0.3, 1);
+  /* Standard ease-out — gentle deceleration */
+  --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+
+  /* Pre-composed transition shorthands */
+  --transition-fast:   0.12s cubic-bezier(0.32, 0.72, 0, 1);
+  --transition-base:   0.22s cubic-bezier(0.32, 0.72, 0, 1);
+  --transition-slow:   0.38s cubic-bezier(0.32, 0.72, 0, 1);
+  --transition-spring: 0.40s cubic-bezier(0.16, 1, 0.3, 1);
+}
