@@ -1,5 +1,4 @@
 import React from 'react';
-import { DynamicBackground } from '../components/layout/DynamicBackground';
 
 export interface AppLayoutProps {
   titleBar: React.ReactNode;
@@ -31,9 +30,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
   onStartResizing,
 }) => {
   return (
-    <div className="relative w-screen h-screen flex flex-col text-white select-none overflow-hidden bg-transparent">
-      {/* Background with Ambient Album Blur */}
-      <DynamicBackground />
+    <div className="relative w-screen h-screen flex flex-col text-foreground select-none overflow-hidden bg-background">
 
       {/* Top Title Bar */}
       {titleBar}
@@ -43,7 +40,7 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
         {/* Left Side: Apple Music style Album Art, Scrubber & Controls */}
         <div
           style={{ width: `${leftWidth}px` }}
-          className="h-full flex-shrink-0 border-r border-white/10 bg-black/45 backdrop-blur-3xl flex flex-col transition-none"
+          className="h-full flex-shrink-0 border-r border-border bg-sidebar flex flex-col transition-none"
         >
           {leftPanel}
         </div>
@@ -51,14 +48,14 @@ export const AppLayout: React.FC<AppLayoutProps> = ({
         {/* Draggable Resizer Handle */}
         <div
           onMouseDown={onStartResizing}
-          className="w-1.5 hover:w-2 hover:bg-white/30 active:bg-white/50 cursor-col-resize z-20 transition-all flex items-center justify-center group flex-shrink-0 select-none bg-white/[0.01]"
+          className="w-1.5 hover:w-2 hover:bg-accent active:bg-muted cursor-col-resize z-20 transition-all flex items-center justify-center group flex-shrink-0 select-none bg-background"
           title="ปรับขนาดแถบควบคุม"
         >
-          <div className="h-8 w-0.5 rounded-full bg-white/20 group-hover:bg-white/60 transition-colors" />
+          <div className="h-8 w-0.5 rounded-full bg-border group-hover:bg-muted-foreground transition-colors" />
         </div>
 
         {/* Right Side: Lyrics Timeline & Translation Table */}
-        <div className="flex-1 h-full flex flex-col overflow-hidden bg-black/35 backdrop-blur-3xl">
+        <div className="flex-1 h-full flex flex-col overflow-hidden bg-background">
           {rightPanel}
         </div>
       </div>

@@ -97,7 +97,7 @@ export function App() {
 
   // Resizable Split-Pane between Left Player & Right Lyrics
   const [leftPanelWidth, setLeftPanelWidth] = useState(() => {
-    const saved = localStorage.getItem('lyric_studio_left_width');
+    const saved = typeof localStorage === 'undefined' ? null : localStorage.getItem('lyric_studio_left_width');
     return saved ? Math.max(APP_CONFIG.LEFT_PANEL_MIN_WIDTH_PX, Math.min(APP_CONFIG.LEFT_PANEL_MAX_WIDTH_PX, parseInt(saved, 10))) : APP_CONFIG.LEFT_PANEL_DEFAULT_WIDTH_PX;
   });
   const [isResizing, setIsResizing] = useState(false);
