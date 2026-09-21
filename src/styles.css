@@ -176,6 +176,9 @@
 [class*="bg-red-"], [class*="bg-rose-"] { background-color: var(--primary) !important; }
 [class*="text-red-"], [class*="text-rose-"] { color: var(--foreground) !important; }
 [class*="border-red-"], [class*="border-rose-"] { border-color: var(--ring) !important; }
+[class*="bg-purple-"], [class*="bg-violet-"], [class*="bg-indigo-"] { background-color: var(--accent) !important; }
+[class*="text-purple-"], [class*="text-violet-"], [class*="text-indigo-"] { color: var(--foreground) !important; }
+[class*="border-purple-"], [class*="border-violet-"], [class*="border-indigo-"] { border-color: var(--border) !important; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
