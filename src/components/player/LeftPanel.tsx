@@ -419,12 +419,12 @@ export const LeftPanel: React.FC<LeftPanelProps> = ({
                 className={cn(
                   "p-1.5 rounded-xl transition-all cursor-pointer",
                   isFavorite 
-                    ? "text-rose-400 bg-rose-500/10 shadow-sm" 
-                    : "text-white/50 hover:text-rose-400 hover:bg-white/10"
+                    ? "text-foreground bg-accent shadow-sm" 
+                    : "text-white/50 hover:text-white hover:bg-white/10"
                 )}
                 title={isFavorite ? APP_TEXT.player.removeFromFavorites : APP_TEXT.player.addToFavorites}
               >
-                <Heart className={cn("w-4 h-4", isFavorite && "fill-current text-rose-400")} />
+                <Heart className={cn("w-4 h-4", isFavorite && "fill-current text-foreground")} />
               </button>
 
               {/* 3-dots Minimalist Context Menu */}
@@ -452,7 +452,7 @@ export const LeftPanel: React.FC<LeftPanelProps> = ({
                           onClick={() => { onOpenUserLibrary(); setIsMenuOpen(false); }}
                           className="flex items-center gap-2.5 px-3 py-2 rounded-xl hover:bg-white/10 hover:text-white transition-colors text-left cursor-pointer active:scale-[0.97]"
                         >
-                          <Heart className="w-3.5 h-3.5 text-rose-400" />
+                          <Heart className="w-3.5 h-3.5 text-white/70" />
                           <span>คลังเพลงของคุณ</span>
                         </button>
                       )}

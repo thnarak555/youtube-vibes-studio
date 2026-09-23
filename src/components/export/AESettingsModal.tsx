@@ -222,7 +222,7 @@ export const AESettingsModal: React.FC<AESettingsModalProps> = ({ isOpen, onClos
                           e.stopPropagation();
                           deleteAEPreset(p.id);
                         }}
-                        className="opacity-0 group-hover:opacity-100 p-1 rounded hover:bg-red-500/20 text-white/40 hover:text-red-400 transition-all cursor-pointer"
+                        className="opacity-0 group-hover:opacity-100 p-1 rounded hover:bg-accent text-muted-foreground hover:text-foreground transition-all cursor-pointer"
                         title="ลบสีนี้ออกจากพรีเซ็ต"
                       >
                         <Trash2 className="w-3.5 h-3.5" />

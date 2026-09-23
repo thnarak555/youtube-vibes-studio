@@ -99,12 +99,12 @@ export const YesPlayTrackRow: React.FC<YesPlayTrackRowProps> = ({
           className={cn(
             "p-1.5 rounded-lg transition-all cursor-pointer",
             isFav
-              ? "text-rose-400 opacity-100"
+              ? "text-foreground opacity-100"
               : "text-white/30 hover:text-white opacity-0 group-hover:opacity-100"
           )}
           title={isFav ? "ลบออกจากเพลงโปรด" : "เพิ่มเป็นเพลงโปรด"}
         >
-          <Heart className={cn("w-4 h-4", isFav && "fill-current text-rose-400")} />
+          <Heart className={cn("w-4 h-4", isFav && "fill-current text-foreground")} />
         </button>
 
         <span className="text-xs font-mono text-white/35">

@@ -112,7 +112,7 @@ export const YesPlayCover: React.FC<YesPlayCoverProps> = ({
               className={cn(
                 "absolute top-2 right-2 p-1.5 rounded-full backdrop-blur-md transition-all z-10 cursor-pointer shadow-md",
                 isFav
-                  ? "bg-rose-500/80 text-white opacity-100 scale-100"
+                  ? "bg-accent text-foreground opacity-100 scale-100"
                   : "bg-black/40 text-white/60 hover:text-white opacity-0 group-hover:opacity-100 scale-90 hover:scale-100"
               )}
               title={isFav ? "ลบออกจากอัลบั้มโปรด" : "เพิ่มเป็นอัลบั้มโปรด"}

@@ -364,7 +364,7 @@ export const DocumentTabsSidebar: React.FC<DocumentTabsSidebarProps> = ({
                             closeTab(tab.id);
                             setActiveMenuTabId(null);
                           }}
-                          className="flex items-center gap-2 px-2.5 py-1.5 rounded-xl hover:bg-red-500/20 text-red-400 hover:text-white transition-colors text-left cursor-pointer"
+                          className="flex items-center gap-2 px-2.5 py-1.5 rounded-lg hover:bg-accent text-muted-foreground hover:text-foreground transition-colors text-left cursor-pointer"
                         >
                           <Trash2 className="w-3.5 h-3.5" />
                           <span>{THAI_TEXT.documentPanel.closeTab}</span>
