@@ -397,7 +397,7 @@ export const SearchSongModal: React.FC<SearchSongModalProps> = ({
 
         {/* Error notification */}
         {error && (
-          <div className="px-6 py-2 text-xs text-rose-300 bg-rose-500/10 border-b border-rose-500/20 text-center font-medium">
+          <div className="px-6 py-2 text-xs text-foreground bg-muted border-b border-border text-center font-medium">
             {error}
           </div>
         )}

@@ -39,11 +39,11 @@ export const BUILTIN_STYLE_TEMPLATES: DesktopLyricsTemplate[] = [
     textAlign: 'center'
   },
   {
-    id: 'cyberpunk-pink',
-    name: 'ไซเบอร์พังก์นีออน',
+    id: 'studio-silver',
+    name: 'สตูดิโอซิลเวอร์',
     fontSize: 34,
     secondaryFontSize: 20,
-    textColor: '#f472b6',
+    textColor: '#d4d4d4',
     secondaryColor: '#38bdf8',
     shadowIntensity: 'glow',
     textAlign: 'center'

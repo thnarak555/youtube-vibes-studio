@@ -134,7 +134,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenExport, onOpenImport, onOp
 
         <button
           onClick={resetToDefault}
-          className="p-2.5 rounded-xl text-white/40 hover:text-rose-400 hover:bg-white/5 transition-colors cursor-pointer min-h-[38px] min-w-[38px] flex items-center justify-center"
+          className="p-2.5 rounded-xl text-white/40 hover:text-white hover:bg-white/5 transition-colors cursor-pointer min-h-[38px] min-w-[38px] flex items-center justify-center"
           title="รีเซ็ตเป็นเพลงตัวอย่าง"
         >
           <RotateCcw className="w-3.5 h-3.5" />

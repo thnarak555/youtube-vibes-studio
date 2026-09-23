@@ -311,7 +311,7 @@ export const DesktopLyricsOverlay: React.FC = () => {
 
             <button
               onClick={handleClose}
-              className="p-1.5 rounded-full text-white/70 hover:text-rose-400 hover:bg-white/15 active:scale-95 transition-all cursor-pointer"
+              className="p-1.5 rounded-full text-white/70 hover:text-white hover:bg-white/15 active:scale-95 transition-all cursor-pointer"
               title="ปิดเนื้อเพลงเดสก์ท็อป"
             >
               <X className="w-3.5 h-3.5" />
