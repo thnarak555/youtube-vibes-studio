@@ -58,7 +58,7 @@ export const GlassDropdown: React.FC<GlassDropdownProps> = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.94, y: -4 }}
           transition={APPLE_THEME.springs.snappy}
-          className={`absolute top-full mt-1.5 ${anchorPosition === 'right' ? 'right-0' : 'left-0'} z-50 min-w-[180px] p-1.5 rounded-2xl bg-[#12131e]/92 backdrop-blur-2xl border border-white/[0.12] shadow-[0_16px_40px_rgba(0,0,0,0.65)] ${APPLE_THEME.specular.top} ${className}`}
+          className={`absolute top-full mt-1.5 ${anchorPosition === 'right' ? 'right-0' : 'left-0'} z-50 min-w-[180px] p-1.5 rounded-lg bg-popover border border-border shadow-xl ${APPLE_THEME.specular.top} ${className}`}
         >
           {items.map((item) => {
             if (item.divider) {
@@ -78,7 +78,7 @@ export const GlassDropdown: React.FC<GlassDropdownProps> = ({
                   item.disabled
                     ? 'opacity-30 cursor-not-allowed text-white'
                     : item.danger
-                    ? 'text-red-400 hover:text-white hover:bg-red-500/20 active:bg-red-500/30'
+                    ? 'text-muted-foreground hover:text-foreground hover:bg-accent active:bg-muted'
                     : 'text-white/80 hover:text-white hover:bg-white/[0.08] active:bg-white/[0.14]'
                 }`}
               >
